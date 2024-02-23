@@ -8,29 +8,47 @@ body {
 #main-header {
     background-color: #222;
     color: white;
-    padding: 20px 0;
+    padding: 40px 0; /* Agrandi */
     text-align: center;
-    background-image: url('image/michael-jordan fond.jpeg'); /* Assurez-vous que cette image est dans votre dossier 'images' */
+    background-image: url('images/header-background.jpg');
     background-size: cover;
 }
 
+#main-header h1 {
+    margin: 0;
+    font-size: 48px; /* Taille du titre agrandie */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Changement de police */
+}
+
 #hero {
-    background-image: url('images/hero-background.jpg');
+    background-image: url('image/michael-jordan fond.jpeg');
     background-size: cover;
     color: white;
     padding: 40px 20px;
     text-align: center;
 }
 
+#hero a {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Changement de police */
+    font-size: 20px; /* Taille agrandie */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 #highlighted-sneakers {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px; /* Espacement entre les sneakers */
     padding: 20px;
 }
 
 .highlighted-sneaker {
-    width: 45%;
+    flex: 1; /* Assure une répartition égale de l'espace */
     text-align: center;
+    max-width: 45%; /* Limite la largeur pour éviter que les cases ne soient trop grandes */
 }
 
 .highlighted-sneaker img {
@@ -60,3 +78,4 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
+}
