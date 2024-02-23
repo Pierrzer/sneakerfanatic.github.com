@@ -1,43 +1,62 @@
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main-header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    background-image: url('image/michael-jordan fond.jpeg'); /* Assurez-vous que cette image est dans votre dossier 'images' */
+    background-size: cover;
 }
 
 #hero {
-  background-image: url(image/michael-jordan fond.jpeg');
-  background-size: cover;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#highlighted-sneakers {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.highlighted-sneaker {
+    width: 45%;
+    text-align: center;
+}
+
+.highlighted-sneaker img {
+    max-width: 100%;
+    height: auto;
 }
 
 #features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 }
 
 .card {
-  margin: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  width: calc(33.333% - 20px);
-  background-color: #f9f9f9;
-  text-align: center;
-  padding: 20px;
-}
-
-.card img {
-  max-width: 100%;
-  height: auto;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    width: calc(33.333% - 20px);
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
 }
 
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
-}
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
